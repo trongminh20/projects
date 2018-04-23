@@ -1,0 +1,30 @@
+
+#quote_box {
+	width: 70%;
+	padding:20px;
+	background-color: #89FDFF;
+	border-radius: 5px;
+	box-shadow: 1px 3px 15px #447E7F;
+	margin:20px;
+
+}
+
+#btn{
+	text-align: center;
+	margin-top:20px;
+}
+button {
+	border:none;
+	text-align: center;
+	margin:10px;
+	padding:10px;
+}
+
+#get{
+	background-color: #357F71;
+}
+
+#author{
+	float:right;
+}
+

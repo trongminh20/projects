@@ -2,10 +2,17 @@
 <html>
 <head>
 	<title>random quote</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="./script.js"></script>
 </head>
 <body>
-	<div id="showing"></div>
-	<button id='btn' onclick="random_quote()"> click</button>
+	<div id = "quote_box"> 
+		<div id="content"></div>
+		<div id="author"></div>
+		<div id="btn">
+			<button id= "get" onclick="random_quote()">Get Quote</button>
+			<button id="post" onclick="tweet()">Tweet it!</button>
+		</div>
+	</div>
 </body>
 </html>
