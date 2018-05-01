@@ -1,30 +1,26 @@
+body{
+	background-color: #0A0A0A;	
+	text-align:center;
+}
 
-#quote_box {
-	width: 70%;
+#quote_box{
+	width:80%;	
 	padding:20px;
-	background-color: #89FDFF;
-	border-radius: 5px;
-	box-shadow: 1px 3px 15px #447E7F;
-	margin:20px;
+	background-color: #363636;
+	margin:30px auto;
+}
+
+#content , #author{
+	color: #ffffff;
+	font-size: 1.5em;
+	font-style:italic;
 
 }
 
-#btn{
-	text-align: center;
+.btn{
+	background-color: #65727F;
 	margin-top:20px;
+	margin-right: 10px;
+	height: 30px;
+	color:#ffffff;
 }
-button {
-	border:none;
-	text-align: center;
-	margin:10px;
-	padding:10px;
-}
-
-#get{
-	background-color: #357F71;
-}
-
-#author{
-	float:right;
-}
-
