@@ -5,7 +5,7 @@ function quotes_source(quotes, author){
   this.random = function(){
     var i = Math.floor(Math.random()*quotes.length);
 
-    return quotes[i] + '<br/>' + '--'+author[i]+'--';
+    return quotes[i] + '<br/>' + '--' + author[i] + '--';
   }
 }
 
