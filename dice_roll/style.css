@@ -1,0 +1,35 @@
+body {
+	background-color: #78FFC2;
+	
+}
+.box{
+	width:80%;
+	height: 500px;
+	background-color:  #C4FFE4;
+	padding:auto;
+	margin:auto;
+}
+
+.player_1, .player_2 {
+	text-align:center;
+	padding:20px;
+	border:1px solid black;
+}
+.player_1{
+	width:45%;
+	float: left;
+
+}
+
+.player_2{
+	width: 45%;
+	float:right;
+}
+
+#score{
+	width:100px;
+	height: 100px;
+	background-color: red;
+	margin:auto;
+	
+}
