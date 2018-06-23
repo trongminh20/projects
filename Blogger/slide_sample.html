@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#slides{
+			position:relative;
+			height: 300px;
+			padding:0;
+			margin:0;
+			list-style-type:none;
+		}
+
+		.slide{
+			position:absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height:100%;
+			opacity: 0;
+			z-index: 1;
+
+			-webkit-transition: opacity 2s;
+			-moz-transition: opacity 2s;
+			-o-transition: opacity 2s;
+			transition: opacity 2s;
+		}
+		.showing{
+			opacity: 1;
+			z-index:2;
+		}
+		.controls{
+			display: none;
+		}
+
+		.buttons{
+			position: absolute;
+			z-index: 10;
+
+		}
+	</style>
+
+	<script type="text/javascript">
+		var slides = document.querySelectorAll('#slides .slide');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide, 2000);
+
+		/*const nextSlide = (){
+			slides[currentSlide].getElementByClassName('slide');
+			currentSlide = ()
+		}
+		function nextSlide(){
+			slides[currentSlide].getElementByClassName('slide');
+			currentSlide = [currentSlide++]%slides.length;
+			slides[currentSlide].getElementByClassName('showing');
+		}*/
+		var next = document.getElementById('next');
+		var prev = document.getElementById('prev');
+
+		function nextSlide(){
+			gotoSlide(currentSlide++);
+		}
+
+		function prevSlide(){
+			gotoSlide(currentSlide--);
+		}
+
+		function gotoSlide(){
+			slides[currentSlide].className='slide';
+			currentSlide = (n+slides.length)%slides.length;
+			slides[currentSlide].className='showing';			
+		}
+
+		next.onclick = function(){nextSlide();};
+		prev.onclick = function (){prevSlide();};
+	</script>
+</head>
+<body>
+<ul id='slides'>
+	<li class='slide showing'><img src="./1.jpg"/></li>
+	<li class='slide'><img src="./2.jpg"/></li>
+	<li class='slide'><img src="./3.jpg"/></li>
+</ul>
+<div class='buttons'>
+<button class='controls' id='prev'> prev</button>
+<button class='controls' id='next'>next</button>
+</div>
+</body>
+</html>
